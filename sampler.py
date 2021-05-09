@@ -3,7 +3,7 @@ import random
 
 # creates a new csv with a random subsample
 
-sample_size = 10000
+sample_size = 1000
 
 path = 'sample/'
 
