@@ -3,15 +3,16 @@ import random
 
 # creates a new csv with a random subsample
 
-sample_size = 1000
+sample_size = 10000
 
 path = 'sample/'
 
-files = ['uued_uudised', 'elu24', 'err', 'paevaleht', 'postimees', 'telegram'] # ohtuleht
-delimiters = [',', ';', ',', ',', ';', ',']
+files = ['uued_uudised', 'elu24', 'err', 'paevaleht', 'postimees', 'telegram', 'ohtuleht']
+delimiters = [',', ';', ',', ',', ';', ',', ',']
 
 for i in range(len(files)):
     file = files[i]
+
     delimiter = delimiters[i]
     all_rows = []
     with open(path + file + '.csv', 'r', encoding='utf-8') as f:
